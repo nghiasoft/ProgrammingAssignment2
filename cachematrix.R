@@ -71,7 +71,7 @@ cacheSolve <- function(x, ...) {
         inverse <- solve(square_matrix, ...)
     }, warning = function(war) {
         error_message <- war
-        x$setError(e)
+        x$setError(error_message)
     }, error = function(err) {
         error_message <- err
         x$setError(error_message)
